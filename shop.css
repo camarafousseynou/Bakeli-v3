@@ -1,0 +1,83 @@
+@import url("https://www.youtube.com/watch?v=OXGznpKZ_sA");
+
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea{
+    font: inherit;
+}
+
+:root{
+    --FF: "Nunito", sans -serif;
+    --FF-HEADING: "Fugaz One", cursive;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+    --BGCOLOR : orange;
+    --BGCOLOR-FADE: rgb(252, 220, 160);
+    --BGIMAGE: linear-gradient(to bottom, var(var(--BGCOLOR), var(var(--BGCOLOR-FARE))));
+    --BODY-BGCOLOR: #FFF;
+    --FONT-COLOR: #000;
+}
+
+.offscreen{
+    position: absolute;
+    left: -10000px;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.center{
+    text-align: center;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: var(--FS);
+}
+
+@keyframes showwelcome{
+    0%{
+        top: -20px;
+        transform: skew(0deg, -5deg) scaleY(0);
+    }
+    80%{
+        top: 30px;
+        transform: skew(10deg, -5deg) scaleY(1.2);
+
+    }
+    100%{
+        top: 20px;
+        transform: skew(-10deg, -5deg) scaleY(1);
+
+    }
+}
+
+.footer{
+    position: sticky;
+    bottom: 0;
+    background-color: var();
+
+    text-align: justify;
+}
+
+.main__article:first-child{
+    margin-top: 1em;
+}
+
+.main__article:last-child{
+    margin-top: 1em;
+}
